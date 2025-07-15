@@ -1,0 +1,17 @@
+E:\Tem_Project\Tem_Project\Project.Infrastructure\bin\Debug\net9.0\Project.Infrastructure.deps.json
+E:\Tem_Project\Tem_Project\Project.Infrastructure\bin\Debug\net9.0\Project.Infrastructure.dll
+E:\Tem_Project\Tem_Project\Project.Infrastructure\bin\Debug\net9.0\Project.Infrastructure.pdb
+E:\Tem_Project\Tem_Project\Project.Infrastructure\bin\Debug\net9.0\Project.Application.dll
+E:\Tem_Project\Tem_Project\Project.Infrastructure\bin\Debug\net9.0\Project.Domain.dll
+E:\Tem_Project\Tem_Project\Project.Infrastructure\bin\Debug\net9.0\Project.Application.pdb
+E:\Tem_Project\Tem_Project\Project.Infrastructure\bin\Debug\net9.0\Project.Domain.pdb
+E:\Tem_Project\Tem_Project\Project.Infrastructure\obj\Debug\net9.0\Project.Infrastructure.csproj.AssemblyReference.cache
+E:\Tem_Project\Tem_Project\Project.Infrastructure\obj\Debug\net9.0\Project.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tem_Project\Tem_Project\Project.Infrastructure\obj\Debug\net9.0\Project.Infrastructure.AssemblyInfoInputs.cache
+E:\Tem_Project\Tem_Project\Project.Infrastructure\obj\Debug\net9.0\Project.Infrastructure.AssemblyInfo.cs
+E:\Tem_Project\Tem_Project\Project.Infrastructure\obj\Debug\net9.0\Project.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Tem_Project\Tem_Project\Project.Infrastructure\obj\Debug\net9.0\Project..A2F26F6C.Up2Date
+E:\Tem_Project\Tem_Project\Project.Infrastructure\obj\Debug\net9.0\Project.Infrastructure.dll
+E:\Tem_Project\Tem_Project\Project.Infrastructure\obj\Debug\net9.0\refint\Project.Infrastructure.dll
+E:\Tem_Project\Tem_Project\Project.Infrastructure\obj\Debug\net9.0\Project.Infrastructure.pdb
+E:\Tem_Project\Tem_Project\Project.Infrastructure\obj\Debug\net9.0\ref\Project.Infrastructure.dll

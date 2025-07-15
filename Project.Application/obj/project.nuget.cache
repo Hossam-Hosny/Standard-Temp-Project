@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qoISpWMzvF8=",
+  "success": true,
+  "projectFilePath": "E:\\Tem_Project\\Tem_Project\\Project.Application\\Project.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\java\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.7\\microsoft.extensions.dependencyinjection.abstractions.9.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}
