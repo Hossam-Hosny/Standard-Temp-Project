@@ -15,3 +15,6 @@ E:\Tem_Project\Tem_Project\Project.Infrastructure\obj\Debug\net9.0\Project.Infra
 E:\Tem_Project\Tem_Project\Project.Infrastructure\obj\Debug\net9.0\refint\Project.Infrastructure.dll
 E:\Tem_Project\Tem_Project\Project.Infrastructure\obj\Debug\net9.0\Project.Infrastructure.pdb
 E:\Tem_Project\Tem_Project\Project.Infrastructure\obj\Debug\net9.0\ref\Project.Infrastructure.dll
+E:\Tem_Project\Tem_Project\Project.Infrastructure\bin\Debug\net9.0\Project.Infrastructure.runtimeconfig.json
+E:\Tem_Project\Tem_Project\Project.Infrastructure\obj\Debug\net9.0\Project.Infrastructure.sourcelink.json
+E:\Tem_Project\Tem_Project\Project.Infrastructure\obj\Debug\net9.0\Project.Infrastructure.genruntimeconfig.cache
