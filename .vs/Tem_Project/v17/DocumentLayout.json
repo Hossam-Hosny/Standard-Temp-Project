@@ -3,7 +3,19 @@
   "WorkspaceRootPath": "E:\\Tem_Project\\Tem_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppDB/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppDB/True/SqlTable/dbo.AspNetRoles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Tem_Project\\Tem_Project\\Project.Infrastructure\\Migrations\\20251006235823_seedRoles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Project.Infrastructure\\Migrations\\20251006235823_seedRoles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121D269B-A460-4F13-9EAC-E0B80D67EC88}|Tem_Project.Domain\\Project.Domain.csproj|e:\\tem_project\\tem_project\\tem_project.domain\\constants\\userroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121D269B-A460-4F13-9EAC-E0B80D67EC88}|Tem_Project.Domain\\Project.Domain.csproj|solutionrelative:tem_project.domain\\constants\\userroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121D269B-A460-4F13-9EAC-E0B80D67EC88}|Tem_Project.Domain\\Project.Domain.csproj|e:\\tem_project\\tem_project\\tem_project.domain\\project.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{121D269B-A460-4F13-9EAC-E0B80D67EC88}|Tem_Project.Domain\\Project.Domain.csproj|solutionrelative:tem_project.domain\\project.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{121D269B-A460-4F13-9EAC-E0B80D67EC88}|Tem_Project.Domain\\Project.Domain.csproj|e:\\tem_project\\tem_project\\tem_project.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,16 +82,55 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "dbo.AspNetUsers [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppDB/True/SqlTable/dbo.AspNetUsers.sql",
-              "ToolTip": "dbo.AspNetUsers [Data]",
+              "Title": "dbo.AspNetRoles [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppDB/True/SqlTable/dbo.AspNetRoles.sql",
+              "ToolTip": "dbo.AspNetRoles [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-10-04T16:00:45.41Z",
+              "WhenOpened": "2025-10-07T00:10:24.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Project.Domain",
+              "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Tem_Project.Domain\\Project.Domain.csproj",
+              "RelativeDocumentMoniker": "Tem_Project.Domain\\Project.Domain.csproj",
+              "ToolTip": "E:\\Tem_Project\\Tem_Project\\Tem_Project.Domain\\Project.Domain.csproj",
+              "RelativeToolTip": "Tem_Project.Domain\\Project.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-07T00:00:49.934Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "UserRoles.cs",
+              "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Tem_Project.Domain\\Constants\\UserRoles.cs",
+              "RelativeDocumentMoniker": "Tem_Project.Domain\\Constants\\UserRoles.cs",
+              "ToolTip": "E:\\Tem_Project\\Tem_Project\\Tem_Project.Domain\\Constants\\UserRoles.cs",
+              "RelativeToolTip": "Tem_Project.Domain\\Constants\\UserRoles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T00:01:06.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20251006235823_seedRoles.cs",
+              "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Project.Infrastructure\\Migrations\\20251006235823_seedRoles.cs",
+              "RelativeDocumentMoniker": "Project.Infrastructure\\Migrations\\20251006235823_seedRoles.cs",
+              "ToolTip": "E:\\Tem_Project\\Tem_Project\\Project.Infrastructure\\Migrations\\20251006235823_seedRoles.cs",
+              "RelativeToolTip": "Project.Infrastructure\\Migrations\\20251006235823_seedRoles.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACEAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T23:58:23.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "20251004155438_Initial.cs",
               "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Project.Infrastructure\\Migrations\\20251004155438_Initial.cs",
               "RelativeDocumentMoniker": "Project.Infrastructure\\Migrations\\20251004155438_Initial.cs",
@@ -92,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Project.API.csproj",
               "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Tem_Project\\Project.API.csproj",
               "RelativeDocumentMoniker": "Tem_Project\\Project.API.csproj",
@@ -105,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Tem_Project.Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Tem_Project.Domain\\Entities\\User.cs",
@@ -118,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Tem_Project\\appsettings.json",
               "RelativeDocumentMoniker": "Tem_Project\\appsettings.json",
@@ -131,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "WebApplicationBuilderExtensions.cs",
               "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Tem_Project\\Extensions\\WebApplicationBuilderExtensions.cs",
               "RelativeDocumentMoniker": "Tem_Project\\Extensions\\WebApplicationBuilderExtensions.cs",
@@ -144,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "ServiceCollectionExtensions.cs",
               "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Project.Application\\Extensions\\ServiceCollectionExtensions.cs",
               "RelativeDocumentMoniker": "Project.Application\\Extensions\\ServiceCollectionExtensions.cs",
@@ -157,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "CreateUserDtoValidator.cs",
               "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Project.Application\\AppUser\\Validators\\CreateUserDtoValidator.cs",
               "RelativeDocumentMoniker": "Project.Application\\AppUser\\Validators\\CreateUserDtoValidator.cs",
@@ -170,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "CreateUserDto.cs",
               "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Project.Application\\AppUser\\Dtos\\CreateUserDto.cs",
               "RelativeDocumentMoniker": "Project.Application\\AppUser\\Dtos\\CreateUserDto.cs",
@@ -183,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "JwtOptions.cs",
               "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Tem_Project\\Sittings\\JwtOptions.cs",
               "RelativeDocumentMoniker": "Tem_Project\\Sittings\\JwtOptions.cs",
@@ -196,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Project.Infrastructure.csproj",
               "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Project.Infrastructure\\Project.Infrastructure.csproj",
               "RelativeDocumentMoniker": "Project.Infrastructure\\Project.Infrastructure.csproj",
@@ -209,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Tem_Project\\Program.cs",
               "RelativeDocumentMoniker": "Tem_Project\\Program.cs",
