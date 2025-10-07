@@ -8,17 +8,17 @@ public class CreateUserDtoValidator:AbstractValidator<CreateUserDto>
     public CreateUserDtoValidator()
     {
         RuleFor(dto=>dto.FirstName)
-            .Length(30)
+            .MaximumLength(30)
             .NotEmpty()
             .WithMessage("First Name Should not be null ");
         
         RuleFor(dto=>dto.LastName)
-            .Length(50)
+            .MaximumLength(50)
             .NotEmpty()
             .WithMessage("Last Name Should not be null ");
 
         RuleFor(dto => dto.UserName)
-         .Length(100)
+         .MaximumLength(100)
          .NotEmpty()
          .WithMessage("UserName Should not be null ");
 
@@ -28,7 +28,7 @@ public class CreateUserDtoValidator:AbstractValidator<CreateUserDto>
          .WithMessage("Email Should not be null ");
 
         RuleFor(dto => dto.Password)
-         .Length(256)
+         .MaximumLength(256)
          .NotEmpty()
          .WithMessage("Password Should not be null ");
     }

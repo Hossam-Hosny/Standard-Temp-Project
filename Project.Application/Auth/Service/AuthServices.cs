@@ -3,6 +3,7 @@ using Project.Application.Auth.Interface;
 using Project.Domain.Constants;
 using Project.Domain.Dtos;
 using Project.Domain.Entities;
+using Project.Domain.Exceptions;
 using Project.Domain.IRepositories;
 using System.IdentityModel.Tokens.Jwt;
 
@@ -14,11 +15,11 @@ internal class AuthServices(IUserReopsitory _repo , IJwtGenerator _jwtGenerator)
     {
         var userEmailexist = await _repo.GetByEmailAsync(dto.Email);
         if (userEmailexist is not null)
-            throw new Exception("UserEmail already exist");
+            throw new ResourceExistException("UserEmail already exist");
 
         var userNameexist = await _repo.GetByUserNameAsync(dto.UserName);
         if (userNameexist is not null)
-            throw new Exception("UserName already exist");
+            throw new ResourceExistException("UserName already exist");
 
         var user = new User
         {

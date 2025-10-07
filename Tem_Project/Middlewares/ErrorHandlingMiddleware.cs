@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.AspNetCore.Http.HttpResults;
 using Project.Domain.Exceptions;
 
 namespace Project.API.Middlewares;
@@ -23,6 +24,11 @@ public class ErrorHandlingMiddleware(ILogger<ErrorHandlingMiddleware>_logger) : 
         {
             context.Response.StatusCode = 403;
             await context.Response.WriteAsync("Access forbidden");
+        }
+        catch(ResourceExistException ex)
+        {
+            context.Response.StatusCode = 404;
+            await context.Response.WriteAsync(ex.Message);
         }
         catch(Exception ex)
         {
