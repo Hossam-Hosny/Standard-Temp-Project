@@ -5,7 +5,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Project.Domain.Entities;
+using Project.Domain.IRepositories;
 using Project.Infrastructure.Context;
+using Project.Infrastructure.Repositories;
 using System.Configuration;
 using System.Text;
 
@@ -51,6 +53,8 @@ public static class ServiceCollectionExtensions
                 };
 
             });
+
+        services.AddScoped<IUserReopsitory, UserRepository>();
 
     }
 }
