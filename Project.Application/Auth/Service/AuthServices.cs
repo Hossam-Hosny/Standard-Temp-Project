@@ -1,14 +1,14 @@
-﻿using Microsoft.JSInterop.Infrastructure;
-using Project.Application.AppUser.Dtos;
+﻿using Project.Application.AppUser.Dtos;
 using Project.Application.Auth.Interface;
 using Project.Domain.Constants;
 using Project.Domain.Dtos;
 using Project.Domain.Entities;
 using Project.Domain.IRepositories;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace Project.Application.Auth.Service;
 
-internal class AuthServices(IUserReopsitory _repo) : IAuthServices
+internal class AuthServices(IUserReopsitory _repo , IJwtGenerator _jwtGenerator) : IAuthServices
 {
     public async Task<AuthModel> CreateUserAsync(CreateUserDto dto)
     {
@@ -39,9 +39,18 @@ internal class AuthServices(IUserReopsitory _repo) : IAuthServices
             return new AuthModel { Message = errors };
 
         }
-      await  _repo.AddToRoleAsync(user, UserRoles.User);
+         await  _repo.AddToRoleAsync(user, UserRoles.User);
 
-
+        var jwtSecurityToken = await _jwtGenerator.CreateJwtToken(user);
+        return new AuthModel
+        {
+            UserName = user.UserName,
+            Email = user.Email,
+            ExpiresOn = jwtSecurityToken.ValidTo,
+            IsAuthenticated = true,
+            Roles = new List<string> { "User" },
+            Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken)
+        };
 
 
     }

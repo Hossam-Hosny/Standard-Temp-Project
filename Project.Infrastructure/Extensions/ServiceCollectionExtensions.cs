@@ -8,6 +8,7 @@ using Project.Domain.Entities;
 using Project.Domain.IRepositories;
 using Project.Infrastructure.Context;
 using Project.Infrastructure.Repositories;
+using Project.Infrastructure.Sittings;
 using System.Configuration;
 using System.Text;
 
@@ -18,7 +19,8 @@ public static class ServiceCollectionExtensions
     public static void AddInfrastructure(this IServiceCollection services,IConfiguration config)
     {
         var connectionString = config.GetConnectionString("LocalConnectionString");
-       
+        services.Configure<JwtOptions>(config.GetSection("JWT"));
+
 
 
         services.AddIdentity<User, IdentityRole>()
@@ -55,6 +57,7 @@ public static class ServiceCollectionExtensions
             });
 
         services.AddScoped<IUserReopsitory, UserRepository>();
+        services.AddScoped<IJwtGenerator, JwtGenerator>();
 
     }
 }

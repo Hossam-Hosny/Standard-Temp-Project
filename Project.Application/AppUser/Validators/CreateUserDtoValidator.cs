@@ -7,12 +7,12 @@ public class CreateUserDtoValidator:AbstractValidator<CreateUserDto>
 {
     public CreateUserDtoValidator()
     {
-        RuleFor(dto=>dto.firstName)
+        RuleFor(dto=>dto.FirstName)
             .Length(30)
             .NotEmpty()
             .WithMessage("First Name Should not be null ");
         
-        RuleFor(dto=>dto.lastName)
+        RuleFor(dto=>dto.LastName)
             .Length(50)
             .NotEmpty()
             .WithMessage("Last Name Should not be null ");

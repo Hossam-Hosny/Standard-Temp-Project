@@ -22,6 +22,19 @@
           "Project.Infrastructure.dll": {}
         }
       },
+      "AutoMapper/15.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "9.0.9",
+          "Microsoft.Extensions.Options": "9.0.9",
+          "Microsoft.IdentityModel.JsonWebTokens": "8.14.0"
+        },
+        "runtime": {
+          "lib/net9.0/AutoMapper.dll": {
+            "assemblyVersion": "15.0.0.0",
+            "fileVersion": "15.0.1.0"
+          }
+        }
+      },
       "Azure.Core/1.38.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "7.0.0",
@@ -2149,6 +2162,7 @@
       "System.Threading.Tasks.Extensions/4.5.4": {},
       "Project.Application/1.0.0": {
         "dependencies": {
+          "AutoMapper": "15.0.1",
           "FluentValidation.AspNetCore": "11.3.1",
           "Project.Domain": "1.0.0"
         },
@@ -2161,7 +2175,8 @@
       },
       "Project.Domain/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9",
+          "System.IdentityModel.Tokens.Jwt": "8.14.0"
         },
         "runtime": {
           "Project.Domain.dll": {
@@ -2177,6 +2192,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/15.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kNo7iIAi4p4XxoEbfif2WUQtc6RTx+UteiRYPqCOKj+4q4+YaWono06qTxoHBy+0N1HdganA//k5p/VmWw2AMA==",
+      "path": "automapper/15.0.1",
+      "hashPath": "automapper.15.0.1.nupkg.sha512"
     },
     "Azure.Core/1.38.0": {
       "type": "package",

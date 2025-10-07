@@ -1,4 +1,4 @@
-﻿namespace Project.API.Sittings
+﻿namespace Project.Infrastructure.Sittings
 
 {
     public class JwtOptions
@@ -7,7 +7,7 @@
         public string Key { get; set; }
         public string Issuer { get; set; }
         public string Audience { get; set; }
-        public int LifeTimeInDays { get; set; }
+        public double LifeTimeInDays { get; set; }
 
 
     }
