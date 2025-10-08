@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{00093D1C-D781-4AB1-93F4-C4AFC06F8BD5}|Tem_Project\\Project.API.csproj|solutionrelative:tem_project\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2EF88174-75D8-41CD-A825-B5488BA3145F}|Project.Application\\Project.Application.csproj|e:\\tem_project\\tem_project\\project.application\\auth\\service\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EF88174-75D8-41CD-A825-B5488BA3145F}|Project.Application\\Project.Application.csproj|solutionrelative:project.application\\auth\\service\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2EF88174-75D8-41CD-A825-B5488BA3145F}|Project.Application\\Project.Application.csproj|e:\\tem_project\\tem_project\\project.application\\appuser\\validators\\addroledtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2EF88174-75D8-41CD-A825-B5488BA3145F}|Project.Application\\Project.Application.csproj|solutionrelative:project.application\\appuser\\validators\\addroledtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{00093D1C-D781-4AB1-93F4-C4AFC06F8BD5}|Tem_Project\\Project.API.csproj|e:\\tem_project\\tem_project\\tem_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00093D1C-D781-4AB1-93F4-C4AFC06F8BD5}|Tem_Project\\Project.API.csproj|solutionrelative:tem_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EF88174-75D8-41CD-A825-B5488BA3145F}|Project.Application\\Project.Application.csproj|e:\\tem_project\\tem_project\\project.application\\auth\\service\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EF88174-75D8-41CD-A825-B5488BA3145F}|Project.Application\\Project.Application.csproj|solutionrelative:project.application\\auth\\service\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{121D269B-A460-4F13-9EAC-E0B80D67EC88}|Tem_Project.Domain\\Project.Domain.csproj|e:\\tem_project\\tem_project\\tem_project.domain\\irepositories\\iuserreopsitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -136,7 +136,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -149,19 +149,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ServiceCollectionExtensions.cs",
-              "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Project.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
-              "RelativeDocumentMoniker": "Project.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
-              "ToolTip": "E:\\Tem_Project\\Tem_Project\\Project.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
-              "RelativeToolTip": "Project.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAqwDEAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T10:27:47.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Project.Infrastructure\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Project.Infrastructure\\Repositories\\UserRepository.cs",
@@ -169,12 +156,11 @@
               "RelativeToolTip": "Project.Infrastructure\\Repositories\\UserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T13:17:39.263Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T13:17:39.263Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AddRoleDto.cs",
               "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Project.Application\\AppUser\\Dtos\\AddRoleDto.cs",
               "RelativeDocumentMoniker": "Project.Application\\AppUser\\Dtos\\AddRoleDto.cs",
@@ -182,8 +168,7 @@
               "RelativeToolTip": "Project.Application\\AppUser\\Dtos\\AddRoleDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T13:58:05.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T13:58:05.377Z"
             },
             {
               "$type": "Document",
@@ -193,14 +178,13 @@
               "RelativeDocumentMoniker": "Tem_Project\\Controllers\\AuthController.cs",
               "ToolTip": "E:\\Tem_Project\\Tem_Project\\Tem_Project\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Tem_Project\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAqwCMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAACcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T14:37:27.102Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T14:37:27.102Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Tem_Project\\Program.cs",
               "RelativeDocumentMoniker": "Tem_Project\\Program.cs",
@@ -208,8 +192,7 @@
               "RelativeToolTip": "Tem_Project\\Program.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAkwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T13:33:41.518Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-04T13:33:41.518Z"
             },
             {
               "$type": "Document",
@@ -221,12 +204,35 @@
               "RelativeToolTip": "Project.Application\\Auth\\Interface\\IAuthServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T13:00:56.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T13:00:56.46Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AuthServices.cs",
+              "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Project.Application\\Auth\\Service\\AuthServices.cs",
+              "RelativeDocumentMoniker": "Project.Application\\Auth\\Service\\AuthServices.cs",
+              "ToolTip": "E:\\Tem_Project\\Tem_Project\\Project.Application\\Auth\\Service\\AuthServices.cs",
+              "RelativeToolTip": "Project.Application\\Auth\\Service\\AuthServices.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAkwCAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T13:01:25.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Project.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "Project.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "E:\\Tem_Project\\Tem_Project\\Project.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "Project.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwDEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T10:27:47.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AddRoleDtoValidator.cs",
               "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Project.Application\\AppUser\\Validators\\AddRoleDtoValidator.cs",
               "RelativeDocumentMoniker": "Project.Application\\AppUser\\Validators\\AddRoleDtoValidator.cs",
@@ -234,8 +240,7 @@
               "RelativeToolTip": "Project.Application\\AppUser\\Validators\\AddRoleDtoValidator.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAqwA8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T14:50:26.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T14:50:26.005Z"
             },
             {
               "$type": "Document",
@@ -247,8 +252,7 @@
               "RelativeToolTip": "Project.Infrastructure\\Repositories\\JwtGenerator.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAgwC4AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T14:07:45.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T14:07:45.199Z"
             },
             {
               "$type": "Document",
@@ -260,21 +264,7 @@
               "RelativeToolTip": "Tem_Project.Domain\\IRepositories\\IUserReopsitory.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAADwvwsAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T13:15:58.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AuthServices.cs",
-              "DocumentMoniker": "E:\\Tem_Project\\Tem_Project\\Project.Application\\Auth\\Service\\AuthServices.cs",
-              "RelativeDocumentMoniker": "Project.Application\\Auth\\Service\\AuthServices.cs",
-              "ToolTip": "E:\\Tem_Project\\Tem_Project\\Project.Application\\Auth\\Service\\AuthServices.cs",
-              "RelativeToolTip": "Project.Application\\Auth\\Service\\AuthServices.cs",
-              "ViewState": "AgIAAAoAAACAmZmZmZkmwBsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T13:01:25.996Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T13:15:58.662Z"
             },
             {
               "$type": "Document",
@@ -346,8 +336,7 @@
               "RelativeToolTip": "Tem_Project\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-04T13:36:26.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-04T13:36:26.651Z"
             },
             {
               "$type": "Document",
@@ -392,8 +381,7 @@
               "RelativeToolTip": "Tem_Project.Domain\\Exceptions\\ResourceExistException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T15:24:16.45Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T15:24:16.45Z"
             },
             {
               "$type": "Document",
@@ -405,8 +393,7 @@
               "RelativeToolTip": "Tem_Project.Domain\\Dtos\\AuthModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T12:55:34.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T12:55:34.608Z"
             },
             {
               "$type": "Document",
@@ -429,8 +416,7 @@
               "RelativeToolTip": "Project.Infrastructure\\Sittings\\JwtOptions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T14:17:03.223Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T14:17:03.223Z"
             },
             {
               "$type": "Document",
@@ -466,8 +452,7 @@
               "RelativeToolTip": "Tem_Project.Domain\\IRepositories\\IJwtGenerator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T14:06:27.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T14:06:27.407Z"
             },
             {
               "$type": "Document",
@@ -479,8 +464,7 @@
               "RelativeToolTip": "Tem_Project.Domain\\Entities\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T14:11:50.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-04T14:11:50.346Z"
             },
             {
               "$type": "Document",
@@ -525,8 +509,7 @@
               "RelativeToolTip": "Project.Infrastructure\\Migrations\\20251004155438_Initial.cs",
               "ViewState": "AgIAABsAAAAAAAAAAIBJwAgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T15:54:38.7Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-04T15:54:38.7Z"
             },
             {
               "$type": "Document",

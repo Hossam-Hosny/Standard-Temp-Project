@@ -34,7 +34,7 @@ namespace Project.API.Controllers
             return Ok(result);
         }
 
-       // [Authorize(UserRoles.Admin)]
+        [Authorize(UserRoles.Admin)]
         [HttpPost("add-role")]
         public async Task<IActionResult> AddRoleAsync([FromBody] AddRoleDto model)
         {
