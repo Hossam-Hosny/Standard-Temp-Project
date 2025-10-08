@@ -7,5 +7,5 @@ public interface IJwtGenerator
 {
     Task<JwtSecurityToken> CreateJwtToken(User user);
     RefreshToken GenerateRefreshToken();
-    Task AddRefreshToken( User user );
+    Task updateRefreshToken( User user );
 }

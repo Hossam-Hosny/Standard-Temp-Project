@@ -115,7 +115,7 @@ internal class AuthServices
             authModel.RefreshTokenExpiration = refreshToken.ExpiresOn;
 
             user.RefreshTokens.Add(refreshToken);
-            await _jwtGenerator.AddRefreshToken(user);
+            await _jwtGenerator.updateRefreshToken(user);
         }
 
 
