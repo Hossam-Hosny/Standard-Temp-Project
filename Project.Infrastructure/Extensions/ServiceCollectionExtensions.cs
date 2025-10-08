@@ -51,7 +51,10 @@ public static class ServiceCollectionExtensions
                     ValidAudience = config["JWT:Audience"],
 
                     ValidateLifetime = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["JWT:Key"]))
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["JWT:Key"])),
+
+                    ClockSkew = TimeSpan.Zero
+
                 };
 
             });

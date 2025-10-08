@@ -6,4 +6,6 @@ namespace Project.Domain.IRepositories;
 public interface IJwtGenerator
 {
     Task<JwtSecurityToken> CreateJwtToken(User user);
+    RefreshToken GenerateRefreshToken();
+    Task AddRefreshToken( User user );
 }

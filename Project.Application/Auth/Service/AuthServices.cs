@@ -68,7 +68,7 @@ internal class AuthServices
         {
             UserName = user.UserName,
             Email = user.Email,
-            ExpiresOn = jwtSecurityToken.ValidTo,
+           // ExpiresOn = jwtSecurityToken.ValidTo,
             IsAuthenticated = true,
             Roles = new List<string> { "User" },
             Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken)
@@ -99,8 +99,26 @@ internal class AuthServices
         authModel.Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
         authModel.Email = user.Email;
         authModel.UserName = user.UserName;
-        authModel.ExpiresOn = jwtSecurityToken.ValidTo;
+      //  authModel.ExpiresOn = jwtSecurityToken.ValidTo;
         authModel.Roles = rolesList.ToList() ;
+
+        if (user.RefreshTokens.Any(t => t.IsActive))
+        {
+            var activeRefreshToken = user.RefreshTokens.FirstOrDefault(t => t.IsActive);
+            authModel.RefreshToken = activeRefreshToken.Token;
+            authModel.RefreshTokenExpiration = activeRefreshToken.ExpiresOn;
+        }
+        else
+        {
+            var refreshToken = _jwtGenerator.GenerateRefreshToken();
+            authModel.RefreshToken = refreshToken.Token;
+            authModel.RefreshTokenExpiration = refreshToken.ExpiresOn;
+
+            user.RefreshTokens.Add(refreshToken);
+            await _jwtGenerator.AddRefreshToken(user);
+        }
+
+
 
         return authModel;
 

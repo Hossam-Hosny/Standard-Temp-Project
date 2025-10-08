@@ -6,6 +6,7 @@ using Project.Domain.IRepositories;
 using Project.Infrastructure.Sittings;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace Project.Infrastructure.Repositories;
@@ -13,7 +14,12 @@ namespace Project.Infrastructure.Repositories;
 internal class JwtGenerator(UserManager<User> _userManager,IOptions<JwtOptions> options) : IJwtGenerator
 {
     private readonly JwtOptions _JwtOptions = options.Value;
-    
+
+    public async Task updateRefreshToken(User user)
+    {
+        await _userManager.UpdateAsync(user);
+    }
+
     public async Task<JwtSecurityToken> CreateJwtToken(User user)
     {
         var userClaims = await _userManager.GetClaimsAsync(user);
@@ -50,5 +56,19 @@ internal class JwtGenerator(UserManager<User> _userManager,IOptions<JwtOptions> 
         return jwtSecurityToken;
 
 
+    }
+
+    public RefreshToken GenerateRefreshToken()
+    {
+        var randomNumber = new byte[32];
+        using var generator = new RNGCryptoServiceProvider();
+        generator.GetBytes(randomNumber);
+
+        return new RefreshToken
+        {
+            Token = Convert.ToBase64String(randomNumber),
+            ExpiresOn = DateTime.UtcNow.AddDays(5),
+            CreatedOn = DateTime.UtcNow
+        };
     }
 }
