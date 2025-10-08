@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Project.Application.AppUser.Dtos;
 using Project.Application.Auth.Interface;
+using Project.Domain.Constants;
 
 namespace Project.API.Controllers
 {
@@ -32,6 +34,20 @@ namespace Project.API.Controllers
             return Ok(result);
         }
 
+       // [Authorize(UserRoles.Admin)]
+        [HttpPost("add-role")]
+        public async Task<IActionResult> AddRoleAsync([FromBody] AddRoleDto model)
+        {
+            
+
+            var result = await _authServices.AddRoleAsync(model);
+            if (!string.IsNullOrEmpty(result))
+                return BadRequest(result);
+
+            return Ok(model);
+
+
+        }
 
 
 

@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "Project.API.Controllers.AuthController",
+    "Method": "AddRoleAsync",
+    "RelativePath": "api/Auth/add-role",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Project.Application.AppUser.Dtos.AddRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.API.Controllers.AuthController",
     "Method": "LoginAsync",
     "RelativePath": "api/Auth/login",
     "HttpMethod": "POST",

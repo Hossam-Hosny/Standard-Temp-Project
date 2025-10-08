@@ -12,6 +12,26 @@ namespace Project.Application.Auth.Service;
 internal class AuthServices
     (IUserReopsitory _repo, IJwtGenerator _jwtGenerator) : IAuthServices
 {
+    public async Task<string> AddRoleAsync(AddRoleDto dto)
+    {
+        var user = await _repo.GetByIdAsync(dto.UserId);
+        if (user is null || !await _repo.RoleExist(dto.role))
+            return "Invalid user Id or Role!";
+
+        if (await _repo.IsInRoleAsync(user, dto.role))
+            return "User already assigned to this role";
+
+       var result = await _repo.AddToRoleAsync(user, dto.role);
+
+        return result.Succeeded ? string.Empty : throw new Exception();
+
+     
+
+      
+
+
+    }
+
     public async Task<AuthModel> CreateUserAsync(CreateUserDto dto)
     {
         var userEmailexist = await _repo.GetByEmailAsync(dto.Email);
