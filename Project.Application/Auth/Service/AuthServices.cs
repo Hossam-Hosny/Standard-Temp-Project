@@ -124,4 +124,44 @@ internal class AuthServices
 
 
     }
+
+    public async Task<AuthModel> RefreshTokenAsync(string token)
+    {
+        var authModel = new AuthModel();
+
+        var user = await _repo.GetByRefreshTokenAsync(token);
+        if (user is null)
+        {
+            authModel.Message = "Invalid token";
+            return authModel;
+        }
+
+        var refreshToken = user.RefreshTokens.Single(t => t.Token == token);
+        if (!refreshToken.IsActive)
+        {
+            authModel.Message = "Inactive token";
+            return authModel;
+        }
+
+        refreshToken.RevokedOn = DateTime.UtcNow;
+        var newRefreshToken = _jwtGenerator.GenerateRefreshToken();
+
+        user.RefreshTokens.Add(newRefreshToken);
+        await _jwtGenerator.updateRefreshToken(user);
+
+        var jwtToken = await _jwtGenerator.CreateJwtToken(user);
+        var rolesList = await _repo.GetRolesAsync(user);
+
+        authModel.IsAuthenticated = true;
+        authModel.Token = new JwtSecurityTokenHandler().WriteToken(jwtToken);
+        authModel.Email = user.Email;
+        authModel.UserName = user.UserName;
+        authModel.Roles = rolesList.ToList();
+        authModel.RefreshToken = newRefreshToken.Token;
+        authModel.RefreshTokenExpiration = newRefreshToken.ExpiresOn;
+
+
+
+        return authModel;
+    }
 }

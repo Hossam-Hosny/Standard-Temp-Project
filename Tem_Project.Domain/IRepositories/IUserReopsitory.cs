@@ -8,6 +8,7 @@ public interface IUserReopsitory
     Task<User?> GetByEmailAsync(string email);
     Task<User?> GetByUserNameAsync(string username);
     Task<User?> GetByIdAsync(string id);
+    Task<User?> GetByRefreshTokenAsync(string token);
     Task<IdentityResult> AddAsync(User user, string password);
     Task<IdentityResult> AddToRoleAsync(User user , string role);
     Task<bool> CheckPassword(User user, string password);

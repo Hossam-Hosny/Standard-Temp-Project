@@ -37,6 +37,11 @@ internal class UserRepository
         return await _userManager.FindByIdAsync(id);
     }
 
+    public async Task<User?> GetByRefreshTokenAsync(string token)
+    {
+        return await _db.Users.FirstOrDefaultAsync(u=>u.RefreshTokens.Any(t=>t.Token==token));
+    }
+
     public async Task<User?> GetByUserNameAsync(string username)
     {
         return await _db.Users.FirstOrDefaultAsync(u => u.UserName == username);
