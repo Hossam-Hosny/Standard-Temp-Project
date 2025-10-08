@@ -21,6 +21,11 @@ internal class UserRepository(AppDbContext _db, UserManager<User> _userManager) 
        await _userManager.AddToRoleAsync(user, role);
     }
 
+    public async Task<bool> CheckPassword(User user, string password)
+    {
+        return await _userManager.CheckPasswordAsync(user,password);
+    }
+
     public async Task<User?> GetByEmailAsync(string email)
     {
         return await _db.Users.FirstOrDefaultAsync(u => u.Email == email);
@@ -32,5 +37,8 @@ internal class UserRepository(AppDbContext _db, UserManager<User> _userManager) 
 
     }
 
-  
+    public async Task<IList<string>> GetRolesAsync(User user)
+    {
+        return await _userManager.GetRolesAsync(user);
+    }
 }

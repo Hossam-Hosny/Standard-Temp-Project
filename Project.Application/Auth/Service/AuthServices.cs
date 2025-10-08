@@ -9,7 +9,8 @@ using System.IdentityModel.Tokens.Jwt;
 
 namespace Project.Application.Auth.Service;
 
-internal class AuthServices(IUserReopsitory _repo , IJwtGenerator _jwtGenerator) : IAuthServices
+internal class AuthServices
+    (IUserReopsitory _repo, IJwtGenerator _jwtGenerator) : IAuthServices
 {
     public async Task<AuthModel> CreateUserAsync(CreateUserDto dto)
     {
@@ -52,6 +53,36 @@ internal class AuthServices(IUserReopsitory _repo , IJwtGenerator _jwtGenerator)
             Roles = new List<string> { "User" },
             Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken)
         };
+
+
+    }
+
+    public async Task<AuthModel> GetTokenAsync(LoginRequestDto dto)
+    {
+        var authModel = new AuthModel();
+
+
+        var user = await _repo.GetByEmailAsync(dto.Email);
+        var correctPassword = await _repo.CheckPassword(user, dto.Password);
+
+        if (user is null || !correctPassword)
+        {
+            authModel.Message = "Email or Password is incorrect!";
+            return authModel;
+        }
+
+        var jwtSecurityToken = await _jwtGenerator.CreateJwtToken(user);
+        var rolesList = await _repo.GetRolesAsync(user);
+
+
+        authModel.IsAuthenticated = true;
+        authModel.Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
+        authModel.Email = user.Email;
+        authModel.UserName = user.UserName;
+        authModel.ExpiresOn = jwtSecurityToken.ValidTo;
+        authModel.Roles = rolesList.ToList() ;
+
+        return authModel;
 
 
     }

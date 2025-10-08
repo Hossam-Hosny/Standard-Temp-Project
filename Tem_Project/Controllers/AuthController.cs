@@ -21,6 +21,17 @@ namespace Project.API.Controllers
         }
 
 
+        [HttpPost("login")]
+        public async Task<IActionResult> LoginAsync([FromBody] LoginRequestDto model)
+        {
+            var result = await _authServices.GetTokenAsync(model);
+
+            if (!result.IsAuthenticated)
+                return BadRequest(result.Message);
+
+            return Ok(result);
+        }
+
 
 
 

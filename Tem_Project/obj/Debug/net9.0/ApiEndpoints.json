@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "Project.API.Controllers.AuthController",
+    "Method": "LoginAsync",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Project.Application.AppUser.Dtos.LoginRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.API.Controllers.AuthController",
     "Method": "RegisterAsync",
     "RelativePath": "api/Auth/register",
     "HttpMethod": "POST",

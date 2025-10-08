@@ -6,4 +6,5 @@ namespace Project.Application.Auth.Interface;
 public interface IAuthServices
 {
     Task<AuthModel> CreateUserAsync(CreateUserDto dto);
+    Task<AuthModel> GetTokenAsync(LoginRequestDto dto);
 }
