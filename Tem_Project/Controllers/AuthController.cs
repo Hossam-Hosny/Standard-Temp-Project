@@ -19,6 +19,8 @@ namespace Project.API.Controllers
             if (!result.IsAuthenticated)
                 return BadRequest(result.Message);
 
+            SetRefreshTokenInCookie(result.RefreshToken, result.RefreshTokenExpiration);
+
             return Ok(result);
         }
 
@@ -37,6 +39,22 @@ namespace Project.API.Controllers
             return Ok(result);
         }
 
+        [HttpPost("revoke-token")]
+        public async Task<IActionResult> RefreshToken([FromBody] RevokeTokenDto revokeToken)
+        {
+            var token = revokeToken.Token ?? Request.Cookies["refreshToken"];
+
+            if (string.IsNullOrEmpty(token))
+                return BadRequest("Token is required");
+
+            var result = await _authServices.RevokeTokenAsync(token);
+
+            if (!result)
+                return BadRequest("Token is invalid");
+
+            return Ok("Token has been revoked");
+        }
+
         [Authorize(UserRoles.Admin)]
         [HttpPost("add-role")]
         public async Task<IActionResult> AddRoleAsync([FromBody] AddRoleDto model)
@@ -52,7 +70,7 @@ namespace Project.API.Controllers
 
         }
 
-        [HttpGet("refreshToken")]
+        [HttpGet("refresh-token")]
         public async Task<IActionResult> RefreshToken()
         {
             var refreshToken = Request.Cookies["refreshToken"];

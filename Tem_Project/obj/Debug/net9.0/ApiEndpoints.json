@@ -34,7 +34,7 @@
   {
     "ContainingType": "Project.API.Controllers.AuthController",
     "Method": "RefreshToken",
-    "RelativePath": "api/Auth/refreshToken",
+    "RelativePath": "api/Auth/refresh-token",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -52,6 +52,22 @@
       {
         "Name": "model",
         "Type": "Project.Application.AppUser.Dtos.CreateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.API.Controllers.AuthController",
+    "Method": "RefreshToken",
+    "RelativePath": "api/Auth/revoke-token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "revokeToken",
+        "Type": "Project.Application.AppUser.Dtos.RevokeTokenDto",
         "IsRequired": true
       }
     ],

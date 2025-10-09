@@ -64,17 +64,26 @@ internal class AuthServices
          await  _repo.AddToRoleAsync(user, UserRoles.User);
 
         var jwtSecurityToken = await _jwtGenerator.CreateJwtToken(user);
-        return new AuthModel
+        var refreshToken = _jwtGenerator.GenerateRefreshToken();
+
+        var authModel =  new AuthModel
         {
             UserName = user.UserName,
             Email = user.Email,
            // ExpiresOn = jwtSecurityToken.ValidTo,
             IsAuthenticated = true,
             Roles = new List<string> { "User" },
-            Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken)
+            Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken),
+            RefreshToken = refreshToken.Token,
+            RefreshTokenExpiration = refreshToken.ExpiresOn,
+
+            
+
         };
+        user.RefreshTokens.Add(refreshToken);
+        await _jwtGenerator.updateRefreshToken(user);
 
-
+        return authModel;
     }
 
     public async Task<AuthModel> GetTokenAsync(LoginRequestDto dto)
@@ -163,5 +172,23 @@ internal class AuthServices
 
 
         return authModel;
+    }
+
+    public async Task<bool> RevokeTokenAsync(string token)
+    {
+        var user = await _repo.GetByRefreshTokenAsync(token);
+        if (user is null)
+            return false;
+
+        var refreshToken = user.RefreshTokens.Single(t => t.Token == token);
+        if (!refreshToken.IsActive)
+            return false;
+
+        refreshToken.RevokedOn = DateTime.UtcNow;
+        await _jwtGenerator.updateRefreshToken(user);
+
+        return true;
+
+
     }
 }
